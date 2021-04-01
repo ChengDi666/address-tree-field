@@ -20,7 +20,7 @@ class AddressTreeField extends Field
     private $resourceName;
     private $manyToManyRelationship;
 
-    public $component = 'nova-nested-tree-attach-many';
+    public $component = 'address-tree-field';
 
     public $showOnIndex = false;
 
@@ -86,7 +86,7 @@ class AddressTreeField extends Field
         ]);
     }
 
-    public function searchable(bool $searchable): NestedTreeAttachManyField
+    public function searchable(bool $searchable): AddressTreeField
     {
         $this->withMeta([
             'searchable' => $searchable,
@@ -95,7 +95,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withIdKey(string $idKey = 'id'): NestedTreeAttachManyField
+    public function withIdKey(string $idKey = 'id'): AddressTreeField
     {
         $this->withMeta([
             'idKey' => $idKey,
@@ -104,7 +104,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withLabelKey(string $labelKey = 'name'): NestedTreeAttachManyField
+    public function withLabelKey(string $labelKey = 'name'): AddressTreeField
     {
         $this->withMeta([
             'labelKey' => $labelKey,
@@ -113,7 +113,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withChildrenKey(string $childrenKey): NestedTreeAttachManyField
+    public function withChildrenKey(string $childrenKey): AddressTreeField
     {
         $this->withMeta([
             'childrenKey' => $childrenKey,
@@ -122,7 +122,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withActiveKey(string $activeKey): NestedTreeAttachManyField
+    public function withActiveKey(string $activeKey): AddressTreeField
     {
         $this->withMeta([
             'activeKey' => $activeKey,
@@ -132,7 +132,7 @@ class AddressTreeField extends Field
     }
 
 
-    public function withPlaceholder(string $placeholder): NestedTreeAttachManyField
+    public function withPlaceholder(string $placeholder): AddressTreeField
     {
         $this->withMeta([
             'placeholder' => $placeholder,
@@ -141,7 +141,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withMaxHeight(int $maxHeight): NestedTreeAttachManyField
+    public function withMaxHeight(int $maxHeight): AddressTreeField
     {
         $this->withMeta([
             'maxHeight' => $maxHeight,
@@ -150,7 +150,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withAlwaysOpen(bool $alwaysOpen): NestedTreeAttachManyField
+    public function withAlwaysOpen(bool $alwaysOpen): AddressTreeField
     {
         $this->withMeta([
             'alwaysOpen' => $alwaysOpen,
@@ -159,7 +159,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withSortValueBy(string $sortBy): NestedTreeAttachManyField
+    public function withSortValueBy(string $sortBy): AddressTreeField
     {
         $this->withMeta([
             'sortValueBy' => $sortBy,
@@ -168,7 +168,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function withFlatten(bool $flatten): NestedTreeAttachManyField
+    public function withFlatten(bool $flatten): AddressTreeField
     {
         $this->withMeta([
             'flatten' => $flatten,
@@ -177,7 +177,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function isActiveFalseValue( $value = false ): NestedTreeAttachManyField
+    public function isActiveFalseValue( $value = false ): AddressTreeField
     {
         $this->withMeta([
             'isActiveFalse' => $value,
@@ -186,7 +186,7 @@ class AddressTreeField extends Field
         return $this;
     }
 
-    public function useSingleSelect(): NestedTreeAttachManyField
+    public function useSingleSelect(): AddressTreeField
     {
         $this->withMeta([
             'multiple' => false,

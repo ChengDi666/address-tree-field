@@ -42,7 +42,7 @@ export default {
     };
   },
   mounted () {
-    console.log(this.field)
+    // console.log(this.field)
   },
   methods: {
     updateValue(state, value) {
@@ -52,7 +52,7 @@ export default {
     },
     normalizer( node )
     {
-      let aa = {
+      return {
         id: node[this.field.idKey],
         label: node[this.field.labelKey],
         customLabel: node['fullname'],
@@ -63,14 +63,11 @@ export default {
             ? node[this.field.childrenKey]
             : false
       }
-      // console.log(node);
-      // console.log(aa);
-      return aa
     },
     setInitialValue()
     {
 
-      let baseUrl = '/nova-vendor/nova-nested-tree-attach-many/';
+      let baseUrl = '/nova-vendor/address-tree-field/';
 
       if( this.resourceId )
       {
