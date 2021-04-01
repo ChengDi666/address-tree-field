@@ -23,8 +23,8 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-nested-tree-attach-many', __DIR__.'/../dist/js/field.js');
-            Nova::style('nova-nested-tree-attach-many', __DIR__.'/../dist/css/field.css');
+            Nova::script('nova-address-tree-firld', __DIR__.'/../dist/js/field.js');
+            Nova::style('nova-address-tree-firld', __DIR__.'/../dist/css/field.css');
         });
 
         $this->app->booted(function () {
