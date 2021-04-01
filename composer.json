@@ -1,5 +1,5 @@
 {
-    "name": "phoenix-lib/nova-nested-tree-attach-many",
+    "name": "norgeit/address-tree-field",
     "description": "Nova Tree address filter component.",
     "keywords": [
         "laravel",
