@@ -1,5 +1,5 @@
 <?php
-namespace PhoenixLib\AddressTreeField\Domain\Relation\Handlers;
+namespace Norgeit\AddressTreeField\Domain\Relation\Handlers;
 
 use DomainException;
 

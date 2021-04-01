@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoenixLib\AddressTreeField\Domain\Cache;
+namespace Norgeit\AddressTreeField\Domain\Cache;
 
 use Illuminate\Support\Collection;
 

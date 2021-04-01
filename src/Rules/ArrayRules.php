@@ -1,5 +1,5 @@
 <?php
-namespace PhoenixLib\AddressTreeField\Rules;
+namespace Norgeit\AddressTreeField\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

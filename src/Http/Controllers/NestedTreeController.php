@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoenixLib\AddressTreeField\Http\Controllers;
+namespace Norgeit\AddressTreeField\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;
