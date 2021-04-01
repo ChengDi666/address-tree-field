@@ -15,7 +15,9 @@
             :max-height="field.maxHeight"
             :value-consists-of="field.valueConsistsOf"
             :normalizer="normalizer"
-        />
+        >
+          <div slot="value-label" slot-scope="{ node }">{{ node.raw.fullname }}</div>
+        </treeselect>
       </div>
     </template>
   </default-field>
@@ -39,19 +41,31 @@ export default {
       selectedValues: null,
     };
   },
+  mounted () {
+    console.log(this.field)
+  },
   methods: {
+    updateValue(state, value) {
+      console.log('state', state)
+      console.log('value', value)
+      state.value = value
+    },
     normalizer( node )
     {
-      return {
+      let aa = {
         id: node[this.field.idKey],
         label: node[this.field.labelKey],
+        customLabel: node['fullname'],
         isDisabled: node.hasOwnProperty(this.field.activeKey)
             && node[this.field.activeKey] === this.field.isActiveFalse,
         children: node.hasOwnProperty(this.field.childrenKey)
-            && node[this.field.childrenKey].length > 0
+        && node[this.field.childrenKey].length > 0
             ? node[this.field.childrenKey]
             : false
       }
+      // console.log(node);
+      // console.log(aa);
+      return aa
     },
     setInitialValue()
     {

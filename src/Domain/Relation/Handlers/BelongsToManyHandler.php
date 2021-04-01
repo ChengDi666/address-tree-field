@@ -1,5 +1,5 @@
 <?php
-namespace PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers;
+namespace PhoenixLib\AddressTreeField\Domain\Relation\Handlers;
 
 class BelongsToManyHandler implements RelationHandler
 {

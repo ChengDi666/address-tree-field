@@ -1,5 +1,5 @@
 <?php
-namespace PhoenixLib\NovaNestedTreeAttachMany\Rules;
+namespace PhoenixLib\AddressTreeField\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

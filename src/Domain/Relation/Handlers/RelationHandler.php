@@ -1,5 +1,5 @@
 <?php
-namespace PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers;
+namespace Norgeit\AddressTreeField\Domain\Relation\Handlers;
 
 interface RelationHandler
 {

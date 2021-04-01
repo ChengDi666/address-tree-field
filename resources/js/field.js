@@ -1,4 +1,4 @@
 Nova.booting((Vue, router, store) => {
-  Vue.component('form-nova-nested-tree-attach-many', require('./components/FormField'))
-  Vue.component('detail-nova-nested-tree-attach-many', require('./components/DetailField'))
+  Vue.component('form-address-tree-field', require('./components/FormField'))
+  Vue.component('detail-address-tree-field', require('./components/DetailField'))
 })

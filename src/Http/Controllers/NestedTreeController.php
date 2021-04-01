@@ -1,10 +1,10 @@
 <?php
 
-namespace PhoenixLib\NovaNestedTreeAttachMany\Http\Controllers;
+namespace PhoenixLib\AddressTreeField\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\RelationHandlerFactory;
+use Norgeit\AddressTreeField\Domain\Relation\RelationHandlerFactory;
 
 class NestedTreeController extends Controller
 {

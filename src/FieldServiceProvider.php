@@ -1,17 +1,17 @@
 <?php
 
-namespace PhoenixLib\NovaNestedTreeAttachMany;
+namespace Norgeit\AddressTreeField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Cache\ArrayCache;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Cache\Cache;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers\BelongsToHandler;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers\BelongsToManyHandler;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers\HasManyHandler;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\RelationHandlerFactory;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\RelationHandlerResolver;
+use Norgeit\AddressTreeField\Domain\Cache\ArrayCache;
+use Norgeit\AddressTreeField\Domain\Cache\Cache;
+use Norgeit\AddressTreeField\Domain\Relation\Handlers\BelongsToHandler;
+use Norgeit\AddressTreeField\Domain\Relation\Handlers\BelongsToManyHandler;
+use Norgeit\AddressTreeField\Domain\Relation\Handlers\HasManyHandler;
+use Norgeit\AddressTreeField\Domain\Relation\RelationHandlerFactory;
+use Norgeit\AddressTreeField\Domain\Relation\RelationHandlerResolver;
 
 class FieldServiceProvider extends ServiceProvider
 {

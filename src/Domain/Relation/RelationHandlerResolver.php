@@ -1,11 +1,11 @@
 <?php
 
-namespace PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation;
+namespace Norgeit\AddressTreeField\Domain\Relation;
 
 use DomainException;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\App;
-use PhoenixLib\NovaNestedTreeAttachMany\Domain\Relation\Handlers\RelationHandler;
+use Norgeit\AddressTreeField\Domain\Relation\Handlers\RelationHandler;
 
 class RelationHandlerResolver implements RelationHandlerFactory
 {

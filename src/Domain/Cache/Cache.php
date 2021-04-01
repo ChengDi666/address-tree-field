@@ -1,6 +1,6 @@
 <?php
 
-namespace PhoenixLib\NovaNestedTreeAttachMany\Domain\Cache;
+namespace PhoenixLib\AddressTreeField\Domain\Cache;
 
 use Illuminate\Support\Collection;
 

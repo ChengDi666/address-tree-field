@@ -1,6 +1,6 @@
 {
     "name": "phoenix-lib/nova-nested-tree-attach-many",
-    "description": "Nova vue-tree-select field for management nested category relations.",
+    "description": "Nova Tree address filter component.",
     "keywords": [
         "laravel",
         "nova",
@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "PhoenixLib\\NovaNestedTreeAttachMany\\": "src/"
+            "Norgeit\\AddressTreeField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PhoenixLib\\NovaNestedTreeAttachMany\\FieldServiceProvider"
+                "Norgeit\\AddressTreeField\\AddressTreeField"
             ]
         }
     },
