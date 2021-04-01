@@ -23,13 +23,13 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-nested-tree-attach-many', __DIR__.'/../dist/js/field.js');
-            Nova::style('nova-nested-tree-attach-many', __DIR__.'/../dist/css/field.css');
+            Nova::script('address-tree-field', __DIR__.'/../dist/js/field.js');
+            Nova::style('address-tree-field', __DIR__.'/../dist/css/field.css');
         });
 
         $this->app->booted(function () {
             \Route::middleware(['nova'])
-                ->prefix('nova-vendor/nova-nested-tree-attach-many')
+                ->prefix('nova-vendor/address-tree-field')
                 ->group(__DIR__.'/../routes/api.php');
         });
     }
