@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Norgeit\\AddressTreeField\\AddressTreeField"
+                "Norgeit\\AddressTreeField\\FieldServiceProvider"
             ]
         }
     },
